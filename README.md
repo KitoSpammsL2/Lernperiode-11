@@ -10,8 +10,8 @@ Beschreiben Sie, welche nicht-technischen Aspekte Sie in diesem Projekt besonder
 
 
 ## 14.8
-- [ ] Arbeitspaket 1 als user story
-- [ ] 1
-- [ ] 2
+- [ ] Als Nutzer möchte ich die App starten können, damit ich den Startbildschirm sehe.
+- [ ] Als Nutzer möchte ich einen Play Button sehen, damit ich das Spiel starten kann.
+- [ ] Als Nutzer möchte ich den Blackjack Spieltisch sehen, damit die Spielfläche vorbereitet ist.
 
 
