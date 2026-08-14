@@ -12,8 +12,16 @@ Ich möchte eine Blackjack-App in Kotlin entwickeln, in der man gegen einen Deal
 
 
 ## 14.8
-- [ ] Als Nutzer möchte ich die App starten können, damit ich den Startbildschirm sehe.
-- [ ] Als Nutzer möchte ich einen Play Button sehen, damit ich das Spiel starten kann.
-- [ ] Als Nutzer möchte ich den Blackjack Spieltisch sehen, damit die Spielfläche vorbereitet ist.
+- [x] Als Nutzer möchte ich die App starten können, damit ich den Startbildschirm sehe.
+- [x] Als Nutzer möchte ich einen Play Button sehen, damit ich das Spiel starten kann.
+- [x] Als Nutzer möchte ich den Blackjack Spieltisch sehen, damit die Spielfläche vorbereitet ist.
+
+Heute habe ich mein .NET MAUI Projekt für mein Blackjack Spiel erstellt und erfolgreich getestet. Danach habe ich einen eigenen Startbildschirm im Casino Design mit einem Play Button gestaltet. Anschliessend habe ich eine neue Spielseite erstellt und mit dem Aufbau des Blackjack Tisches begonnen. Dabei habe ich auch gelernt, wie XAML und C# Dateien in MAUI zusammenarbeiten.
 
 
+## 21.8
+
+- [ ] Als Spieler möchte ich zwei Karten erhalten, damit meine erste Hand angezeigt wird.
+- [ ] Als Spieler möchte ich den Wert meiner Karten sehen, damit ich meine Hand einschätzen kann.
+- [ ] Als Spieler möchte ich mit Hit eine weitere Karte ziehen, damit ich meine Hand verbessern kann.
+- [ ] Als Spieler möchte ich bei über 21 Punkten verlieren, damit ein Bust korrekt erkannt wird.
