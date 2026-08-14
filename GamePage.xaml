@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<ContentPage
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="BlackJack.GamePage"
+    BackgroundColor="#071C14"
+    Shell.NavBarIsVisible="False">
+
+    <Grid>
+
+        <!-- Blackjack Tisch -->
+        <Border
+            Margin="20"
+            BackgroundColor="#0B3D2E"
+            Stroke="#D4AF37"
+            StrokeThickness="2"
+            StrokeShape="RoundRectangle 30">
+
+            <Grid
+                Padding="25"
+                RowDefinitions="Auto,*,Auto,*,Auto">
+
+                <!-- DEALER -->
+                <VerticalStackLayout
+                    Grid.Row="0"
+                    HorizontalOptions="Center"
+                    Spacing="8">
+
+                    <Label
+                        Text="DEALER"
+                        FontSize="14"
+                        FontAttributes="Bold"
+                        CharacterSpacing="3"
+                        TextColor="#D4AF37"
+                        HorizontalTextAlignment="Center" />
+
+                    <Label
+                        Text="♠  ♥  ♣  ♦"
+                        FontSize="20"
+                        TextColor="White"
+                        HorizontalTextAlignment="Center" />
+
+                </VerticalStackLayout>
+
+
+                <!-- Mitte -->
+                <VerticalStackLayout
+                    Grid.Row="2"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    Spacing="6">
+
+                    <Label
+                        Text="BLACKJACK"
+                        FontSize="28"
+                        FontAttributes="Bold"
+                        TextColor="#D4AF37"
+                        HorizontalTextAlignment="Center" />
+
+                    <Label
+                        Text="PAYS 3:2"
+                        FontSize="11"
+                        CharacterSpacing="3"
+                        TextColor="#A8B9B0"
+                        HorizontalTextAlignment="Center" />
+
+                </VerticalStackLayout>
+
+
+                <!-- PLAYER -->
+                <VerticalStackLayout
+                    Grid.Row="4"
+                    HorizontalOptions="Fill"
+                    Spacing="12">
+
+                    <Label
+                        Text="YOUR HAND"
+                        FontSize="13"
+                        FontAttributes="Bold"
+                        CharacterSpacing="2"
+                        TextColor="White"
+                        HorizontalTextAlignment="Center" />
+
+                    <Label
+                        Text="Balance  1'000 Chips"
+                        FontSize="14"
+                        TextColor="#D4AF37"
+                        HorizontalTextAlignment="Center" />
+
+                    <Grid
+                        ColumnDefinitions="*,*"
+                        ColumnSpacing="10"
+                        Margin="0,10,0,0">
+
+                        <Button
+                            Grid.Column="0"
+                            Text="HIT"
+                            FontAttributes="Bold"
+                            BackgroundColor="#D4AF37"
+                            TextColor="#071C14"
+                            HeightRequest="55"
+                            CornerRadius="8" />
+
+                        <Button
+                            Grid.Column="1"
+                            Text="STAND"
+                            FontAttributes="Bold"
+                            BackgroundColor="#173F32"
+                            BorderColor="#D4AF37"
+                            BorderWidth="1"
+                            TextColor="White"
+                            HeightRequest="55"
+                            CornerRadius="8" />
+
+                    </Grid>
+
+                </VerticalStackLayout>
+
+            </Grid>
+
+        </Border>
+
+    </Grid>
+
+</ContentPage>
