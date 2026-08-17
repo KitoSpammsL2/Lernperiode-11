@@ -70,50 +70,97 @@
 
                 <!-- PLAYER -->
                 <VerticalStackLayout
-                    Grid.Row="4"
-                    HorizontalOptions="Fill"
-                    Spacing="12">
+            Grid.Row="4"
+            HorizontalOptions="Fill"
+            Spacing="12">
 
-                    <Label
-                        Text="YOUR HAND"
-                        FontSize="13"
-                        FontAttributes="Bold"
-                        CharacterSpacing="2"
-                        TextColor="White"
-                        HorizontalTextAlignment="Center" />
+                            <Label
+                Text="YOUR HAND"
+                FontSize="13"
+                FontAttributes="Bold"
+                CharacterSpacing="2"
+                TextColor="White"
+                HorizontalTextAlignment="Center" />
 
-                    <Label
-                        Text="Balance  1'000 Chips"
-                        FontSize="14"
-                        TextColor="#D4AF37"
-                        HorizontalTextAlignment="Center" />
+                            <!-- Spielerkarten -->
+                            <HorizontalStackLayout
+                HorizontalOptions="Center"
+                Spacing="12">
 
-                    <Grid
-                        ColumnDefinitions="*,*"
-                        ColumnSpacing="10"
-                        Margin="0,10,0,0">
+                                <Border
+                    WidthRequest="85"
+                    HeightRequest="120"
+                    BackgroundColor="White"
+                    Stroke="#D4AF37"
+                    StrokeThickness="2"
+                    StrokeShape="RoundRectangle 10">
 
-                        <Button
-                            Grid.Column="0"
-                            Text="HIT"
+                                    <Grid>
+                                        <Label
+                            Text="A♠"
+                            FontSize="28"
                             FontAttributes="Bold"
-                            BackgroundColor="#D4AF37"
-                            TextColor="#071C14"
-                            HeightRequest="55"
-                            CornerRadius="8" />
+                            TextColor="Black"
+                            HorizontalOptions="Center"
+                            VerticalOptions="Center" />
+                                    </Grid>
 
-                        <Button
-                            Grid.Column="1"
-                            Text="STAND"
+                                </Border>
+
+                                <Border
+                    WidthRequest="85"
+                    HeightRequest="120"
+                    BackgroundColor="White"
+                    Stroke="#D4AF37"
+                    StrokeThickness="2"
+                    StrokeShape="RoundRectangle 10">
+
+                                    <Grid>
+                                        <Label
+                            Text="K♥"
+                            FontSize="28"
                             FontAttributes="Bold"
-                            BackgroundColor="#173F32"
-                            BorderColor="#D4AF37"
-                            BorderWidth="1"
-                            TextColor="White"
-                            HeightRequest="55"
-                            CornerRadius="8" />
+                            TextColor="#B71C1C"
+                            HorizontalOptions="Center"
+                            VerticalOptions="Center" />
+                                    </Grid>
 
-                    </Grid>
+                                </Border>
+
+                            </HorizontalStackLayout>
+
+                            <Label
+                Text="Balance  1'000 Chips"
+                FontSize="14"
+                TextColor="#D4AF37"
+                HorizontalTextAlignment="Center" />
+
+                            <Grid
+                ColumnDefinitions="*,*"
+                ColumnSpacing="10"
+                Margin="0,10,0,0">
+
+                                <Button
+                    Grid.Column="0"
+                    Text="HIT"
+                    FontAttributes="Bold"
+                    BackgroundColor="#D4AF37"
+                    TextColor="#071C14"
+                    HeightRequest="55"
+                    CornerRadius="8" />
+
+                                <Button
+                    Grid.Column="1"
+                    Text="STAND"
+                    FontAttributes="Bold"
+                    BackgroundColor="#173F32"
+                    BorderColor="#D4AF37"
+                    BorderWidth="1"
+                    TextColor="White"
+                    HeightRequest="55"
+                    CornerRadius="8" />
+
+                            </Grid>
 
                 </VerticalStackLayout>
 
