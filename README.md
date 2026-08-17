@@ -21,7 +21,7 @@ Heute habe ich mein .NET MAUI Projekt für mein Blackjack Spiel erstellt und erf
 
 ## 21.8
 
-- [ ] Als Spieler möchte ich zwei Karten erhalten, damit meine erste Hand angezeigt wird.
+- [x] Als Spieler möchte ich zwei Karten erhalten, damit meine erste Hand angezeigt wird.
 - [ ] Als Spieler möchte ich den Wert meiner Karten sehen, damit ich meine Hand einschätzen kann.
 - [ ] Als Spieler möchte ich mit Hit eine weitere Karte ziehen, damit ich meine Hand verbessern kann.
 - [ ] Als Spieler möchte ich bei über 21 Punkten verlieren, damit ein Bust korrekt erkannt wird.
