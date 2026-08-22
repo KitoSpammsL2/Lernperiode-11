@@ -21,7 +21,7 @@ Heute habe ich mein .NET MAUI Projekt für mein Blackjack Spiel erstellt und erf
 
 ## 21.8
 
-Heute habe ich die Spiellogik meines Blackjack-Spiels weiterentwickelt. Zuerst habe ich den Kartenwert des Spielers mit C# berechnet und diesen dynamisch auf der Spieloberfläche angezeigt. Danach habe ich den HIT-Button mit einer C#-Methode verbunden. Beim Drücken wird nun ein zufälliger Kartenwert erzeugt und zum bisherigen Punktestand addiert. Zusätzlich habe ich eine dritte Spielkarte auf dem Tisch erstellt und diese mit der Spiellogik verbunden, sodass der zufällig gezogene Wert auf der Karte angezeigt wird. Dabei habe ich Variablen, Scope, Events und Random besser kennengelernt.
+Heute habe ich die Spiellogik meines Blackjack-Spiels weiterentwickelt. Zuerst habe ich den Kartenwert des Spielers mit C# berechnet und diesen dynamisch auf der Spieloberfläche angezeigt. Danach habe ich den HIT-Button mit einer C#-Methode verbunden. Beim Drücken wird nun ein zufälliger Kartenwert erzeugt und zum bisherigen Punktestand addiert. Zusätzlich habe ich eine dritte Spielkarte auf dem Tisch erstellt und diese mit der Spiellogik verbunden, sodass der zufällig gezogene Wert auf der Karte angezeigt wird.
 
 - [x] Als Spieler möchte ich zwei Karten erhalten, damit meine erste Hand angezeigt wird.
 - [x] Als Spieler möchte ich den Wert meiner Karten sehen, damit ich meine Hand einschätzen kann.
