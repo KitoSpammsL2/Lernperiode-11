@@ -72,6 +72,7 @@
 
                 <!-- PLAYER -->
                 <VerticalStackLayout
+            
             Grid.Row="4"
             HorizontalOptions="Fill"
             Spacing="12">
@@ -97,6 +98,7 @@
 
                             <!-- Spielerkarten -->
                             <HorizontalStackLayout
+                x:Name="PlayerCardsLayout"
                 HorizontalOptions="Center"
                 Spacing="12">
 
@@ -142,66 +144,59 @@
 
                         
                                 
-                            <Border
-                               
-                            x:Name="ThirdCard"
-                            WidthRequest="85"
-                            HeightRequest="120"
-                            BackgroundColor="White"
-                            Stroke="#D4AF37"
-                            StrokeThickness="2"
-                            StrokeShape="RoundRectangle 10">
-
-                            <Label
-                                x:Name="ThirdCardLabel"
-                                Text="?"
-                                FontSize="28"
-                                FontAttributes="Bold"
-                                HorizontalOptions="Center"
-                                VerticalOptions="Center"/>
-
-
-                        </Border>
+            
 
 
 
                     </HorizontalStackLayout>
 
-                            <Label
+            <Label
                 Text="Balance  1'000 Chips"
                 FontSize="14"
                 TextColor="#D4AF37"
                 HorizontalTextAlignment="Center" />
 
-                            <Grid
+            <Label
+                x:Name="GameStatusLabel"
+                Text="YOUR TURN"
+                FontSize="16"
+                FontAttributes="Bold"
+                TextColor="#D4AF37"
+                HorizontalTextAlignment="Center"
+                Margin="0,5,0,5" />
+
+            <Grid
                 ColumnDefinitions="*,*"
                 ColumnSpacing="10"
                 Margin="0,10,0,0">
 
-                                <Button
+
+            <Button
                                     
-                    Grid.Column="0"
-                    Text="HIT"
-                    FontAttributes="Bold"
-                    BackgroundColor="#D4AF37"
-                    TextColor="#071C14"
-                    HeightRequest="55"
-                    CornerRadius="8"
-                    Clicked="OnHitClicked"/>
+                Grid.Column="0"
+                Text="HIT"
+                FontAttributes="Bold"
+                BackgroundColor="#D4AF37"
+                TextColor="#071C14"
+                HeightRequest="55"
+                CornerRadius="8"
+                Clicked="OnHitClicked"
+                x:Name="HitButton" />
 
-                                <Button
-                    Grid.Column="1"
-                    Text="STAND"
-                    FontAttributes="Bold"
-                    BackgroundColor="#173F32"
-                    BorderColor="#D4AF37"
-                    BorderWidth="1"
-                    TextColor="White"
-                    HeightRequest="55"
-                    CornerRadius="8"
-                    Clicked="OnStandClicked"/>
+            <Button
+                Grid.Column="1"
+                Text="STAND"
+                FontAttributes="Bold"
+                BackgroundColor="#173F32"
+                BorderColor="#D4AF37"
+                BorderWidth="1"
+                TextColor="White"
+                HeightRequest="55"
+                CornerRadius="8"
+                Clicked="OnStandClicked"
+                x:Name="StandButton"/>
 
-                            </Grid>
+            </Grid>
 
                 </VerticalStackLayout>
 
