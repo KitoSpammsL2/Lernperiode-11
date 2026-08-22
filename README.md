@@ -30,7 +30,15 @@ Heute habe ich die Spiellogik meines Blackjack-Spiels weiterentwickelt. Zuerst h
 
 
 ## 29.08.2026
+
+Heute habe ich mein Blackjack-Spiel deutlich erweitert. Die HIT-Funktion kann jetzt bei jedem Klick eine neue Karte dynamisch erstellen und anzeigen. Zusätzlich habe ich das Kartenset verbessert. Die Karten erhalten zufällige Werte von 2 bis 10 sowie J, Q und K und eines der vier zufälligen Symbole. Herz und Karo werden rot, Pik und Kreuz schwarz dargestellt. Ausserdem habe ich die STAND-Funktion eingebaut. Wenn der Spieler seinen Zug beendet, werden die Buttons deaktiviert und auf dem Spieltisch wird angezeigt, dass nun der Dealer an der Reihe ist.
+
+
 - [x] Als Spieler möchte ich mit Hit eine weitere Karte ziehen, damit ich meine Hand verbessern kann. (Fertig Stellen.)
 - [x] Als Spieler möchte ich realistische Spielkarten mit zufälligen Werten und Symbolen erhalten, damit das Blackjack-Spiel echter wirkt.
 - [x] Als Spieler möchte ich mit Stand meinen Zug beenden, damit der Dealer an der Reihe ist.
+
+## 05.09.2026
+
+
 - [ ] Als Spieler möchte ich bei über 21 Punkten verlieren, damit ein Bust korrekt erkannt wird.
