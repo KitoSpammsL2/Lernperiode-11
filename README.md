@@ -31,6 +31,6 @@ Heute habe ich die Spiellogik meines Blackjack-Spiels weiterentwickelt. Zuerst h
 
 ## 29.08.2026
 - [x] Als Spieler möchte ich mit Hit eine weitere Karte ziehen, damit ich meine Hand verbessern kann. (Fertig Stellen.)
-- [ ] Als Spieler möchte ich realistische Spielkarten mit zufälligen Werten und Symbolen erhalten, damit das Blackjack-Spiel echter wirkt.
+- [x] Als Spieler möchte ich realistische Spielkarten mit zufälligen Werten und Symbolen erhalten, damit das Blackjack-Spiel echter wirkt.
 - [ ] Als Spieler möchte ich mit Stand meinen Zug beenden, damit der Dealer an der Reihe ist.
 - [ ] Als Spieler möchte ich bei über 21 Punkten verlieren, damit ein Bust korrekt erkannt wird.
