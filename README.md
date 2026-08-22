@@ -42,3 +42,6 @@ Heute habe ich mein Blackjack-Spiel deutlich erweitert. Die HIT-Funktion kann je
 
 
 - [ ] Als Spieler möchte ich bei über 21 Punkten verlieren, damit ein Bust korrekt erkannt wird.
+- [ ] Als Entwickler möchte ich eine gemeinsame Karten-zieh-Funktion verwenden, damit Startkarten, HIT und Dealer dieselbe Logik benutzen.
+- [ ] Als Spieler möchte ich beim Start zwei zufällige Karten erhalten, damit jede Runde anders beginnt.
+- [ ] Als Spieler möchte ich gegen einen Dealer spielen, der automatisch Karten zieht, damit eine vollständige Runde möglich wird.
