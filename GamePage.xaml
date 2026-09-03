@@ -112,6 +112,7 @@
 
                                     <Grid>
                                         <Label
+                            x:Name="FirstCardLabel"
                             Text="A♠"
                             FontSize="28"
                             FontAttributes="Bold"
@@ -132,10 +133,12 @@
 
                                     <Grid>
                                         <Label
+                            
+                            x:Name="SecondCardLabel"               
                             Text="K♥"
                             FontSize="28"
                             FontAttributes="Bold"
-                            TextColor="#B71C1C"
+                            TextColor="#FFFF0000"
                             HorizontalOptions="Center"
                             VerticalOptions="Center" />
                                     </Grid>

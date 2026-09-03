@@ -12,9 +12,13 @@ public partial class GamePage : ContentPage
 
 
 
-        int firstCard = 7;
-        int secondCard = 10;
+        int firstCard = random.Next(2, 11);
+        int secondCard = random.Next(2, 11);
+
         score = firstCard + secondCard;
+
+        FirstCardLabel.Text = firstCard.ToString();
+        SecondCardLabel.Text = secondCard.ToString();
 
         PlayerScoreLabel.Text = score.ToString();
     }
