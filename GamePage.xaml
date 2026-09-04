@@ -36,6 +36,19 @@
                         HorizontalTextAlignment="Center" />
 
                     <Label
+                        x:Name="DealerScoreLabel"
+                        Text="0"
+                        FontSize="22"
+                        FontAttributes="Bold"
+                        TextColor="#D4AF37"
+                        HorizontalTextAlignment="Center" />
+                        
+                    <HorizontalStackLayout
+                        x:Name="DealerCardsLayout"
+                        HorizontalOptions="Center"
+                        Spacing="12" />
+
+                    <Label
                         Text="♠  ♥  ♣  ♦"
                         FontSize="20"
                         TextColor="White"

@@ -4,7 +4,8 @@ namespace BlackJack;
 
 public partial class GamePage : ContentPage
 {
-    int score; 
+    int score;
+    int dealerScore;
     Random random = new Random();
     public GamePage()
     {
@@ -26,58 +27,21 @@ public partial class GamePage : ContentPage
 
     private void OnHitClicked(object sender, EventArgs e)
     {
-        string[] cardValues = { "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K" };
+        var card = DrawCard();
 
-        string cardValue = cardValues[random.Next(cardValues.Length)];
+        score += card.Points;
 
-        int newCard;
+        AddCard(PlayerCardsLayout, card.Text, card.Color);
 
-        if (cardValue == "J" || cardValue == "Q" || cardValue == "K")
-        {
-            newCard = 10;
-        }
-        else
-        {
-            newCard = int.Parse(cardValue);
-        }
-
-        string[] suits = { "♠", "♥", "♣", "♦" };
-        string suit = suits[random.Next(suits.Length)];
-
-        Border card = new Border();
-        card.WidthRequest = 85;
-        card.HeightRequest = 120;
-        card.BackgroundColor = Colors.White;
-        card.Stroke = Colors.Gold;
-        card.StrokeThickness = 2;
-        card.StrokeShape = new RoundRectangle
-        {
-            CornerRadius = 10
-        };
-
-        Label cardLabel = new Label();
-        cardLabel.Text = cardValue + suit;
-
-        if (suit == "♥" || suit == "♦")
-        {
-            cardLabel.TextColor = Colors.Red;
-        }
-        else
-        {
-            cardLabel.TextColor = Colors.Black;
-        }
-
-        cardLabel.HorizontalTextAlignment = TextAlignment.Center;
-        cardLabel.VerticalTextAlignment = TextAlignment.Center;
-        cardLabel.FontSize = 28;
-        cardLabel.FontAttributes = FontAttributes.Bold;
-        card.Content = cardLabel;
-
-        PlayerCardsLayout.Children.Add(card);
-
-        score = score + newCard;
         PlayerScoreLabel.Text = score.ToString();
-      
+
+        if (score > 21)
+        {
+            GameStatusLabel.Text = "BUST - YOU LOSE";
+
+            HitButton.IsEnabled = false;
+            StandButton.IsEnabled = false;
+        }
     }
 
 
@@ -88,6 +52,95 @@ public partial class GamePage : ContentPage
         StandButton.IsEnabled = false;
 
         GameStatusLabel.Text = "DEALER'S TURN";
+
+        while (dealerScore < 17)
+        {
+            var card = DrawCard();
+
+            dealerScore += card.Points;
+
+            AddCard(DealerCardsLayout, card.Text, card.Color);
+        }
+
+        DealerScoreLabel.Text = dealerScore.ToString();
+
+        if (dealerScore > 21)
+        {
+            GameStatusLabel.Text = "DEALER BUST - YOU WIN";
+        }
+        else if (dealerScore > score)
+        {
+            GameStatusLabel.Text = "DEALER WINS";
+        }
+        else if (dealerScore < score)
+        {
+            GameStatusLabel.Text = "YOU WIN";
+        }
+        else
+        {
+            GameStatusLabel.Text = "PUSH";
+        }
+    }
+
+    private (string Text, int Points, Color Color) DrawCard()
+    {
+        string[] cardValues = { "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K" };
+        string[] suits = { "♠", "♥", "♣", "♦" };
+
+        string cardValue = cardValues[random.Next(cardValues.Length)];
+        string suit = suits[random.Next(suits.Length)];
+
+        int points;
+
+        if (cardValue == "J" || cardValue == "Q" || cardValue == "K")
+        {
+            points = 10;
+        }
+        else
+        {
+            points = int.Parse(cardValue);
+        }
+
+        Color color;
+
+        if (suit == "♥" || suit == "♦")
+        {
+            color = Colors.Red;
+        }
+        else
+        {
+            color = Colors.Black;
+        }
+
+        return (cardValue + suit, points, color);
+    }
+    private void AddCard(HorizontalStackLayout layout, string text, Color color)
+    {
+        Border card = new Border();
+
+        card.WidthRequest = 85;
+        card.HeightRequest = 120;
+        card.BackgroundColor = Colors.White;
+        card.Stroke = Colors.Gold;
+        card.StrokeThickness = 2;
+
+        card.StrokeShape = new RoundRectangle
+        {
+            CornerRadius = new CornerRadius(10)
+        };
+
+        Label cardLabel = new Label();
+
+        cardLabel.Text = text;
+        cardLabel.TextColor = color;
+        cardLabel.FontSize = 28;
+        cardLabel.FontAttributes = FontAttributes.Bold;
+        cardLabel.HorizontalTextAlignment = TextAlignment.Center;
+        cardLabel.VerticalTextAlignment = TextAlignment.Center;
+
+        card.Content = cardLabel;
+
+        layout.Children.Add(card);
     }
 
 }
