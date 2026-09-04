@@ -38,10 +38,17 @@ Heute habe ich mein Blackjack-Spiel deutlich erweitert. Die HIT-Funktion kann je
 - [x] Als Spieler möchte ich realistische Spielkarten mit zufälligen Werten und Symbolen erhalten, damit das Blackjack-Spiel echter wirkt.
 - [x] Als Spieler möchte ich mit Stand meinen Zug beenden, damit der Dealer an der Reihe ist.
 
-## 05.09.2026
+## 04.09.2026
 
+Heute habe ich die Spiellogik meines Blackjack-Spiels stark erweitert. Die Kartenlogik wurde in eine gemeinsame Funktion ausgelagert, damit sie für verschiedene Teile des Spiels wiederverwendet werden kann. Ausserdem erhält der Spieler zufällige Startkarten und verliert automatisch, wenn er mehr als 21 Punkte erreicht. Zusätzlich habe ich den Dealer eingebaut. Nach dem Drücken von STAND zieht dieser selbstständig Karten bis mindestens 17 Punkte. Anschliessend werden die Punktestände verglichen und angezeigt, ob der Spieler oder der Dealer gewonnen hat.
 
 - [x] Als Spieler möchte ich bei über 21 Punkten verlieren, damit ein Bust korrekt erkannt wird.
-- [ ] Als Entwickler möchte ich eine gemeinsame Karten-zieh-Funktion verwenden, damit Startkarten, HIT und Dealer dieselbe Logik benutzen.
-- [ ] Als Spieler möchte ich beim Start zwei zufällige Karten erhalten, damit jede Runde anders beginnt.
-- [ ] Als Spieler möchte ich gegen einen Dealer spielen, der automatisch Karten zieht, damit eine vollständige Runde möglich wird.
+- [x] Als Entwickler möchte ich eine gemeinsame Karten-zieh-Funktion verwenden, damit Startkarten, HIT und Dealer dieselbe Logik benutzen.
+- [x] Als Spieler möchte ich beim Start zwei zufällige Karten erhalten, damit jede Runde anders beginnt.
+- [x] Als Spieler möchte ich gegen einen Dealer spielen, der automatisch Karten zieht, damit eine vollständige Runde möglich wird.
+
+## 11.092026
+
+- [ ] Als Spieler möchte ich, dass ein Ass je nach Situation als 1 oder 11 Punkte zählt, damit die Blackjack-Regeln korrekt umgesetzt werden.
+- [ ] Als Spieler möchte ich nach einer beendeten Runde eine neue Runde starten können, damit ich mehrere Runden hintereinander spielen kann, ohne die App neu zu starten.
+- [ ] Als Spieler möchte ich vor einer Runde Chips setzen können, damit Gewinne und Verluste Auswirkungen auf mein Guthaben haben.
