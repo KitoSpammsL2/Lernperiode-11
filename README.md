@@ -5,7 +5,11 @@
 
 In meiner Lernperiode habe ich ein eigenes Blackjack-Spiel als .NET MAUI App mit C# und XAML entwickelt. Das Spiel besitzt zufällige Spielkarten mit verschiedenen Werten und Symbolen sowie die wichtigsten Blackjack-Regeln. Der Spieler kann Karten mit HIT ziehen oder seinen Zug mit STAND beenden. Dabei werden die Punkte automatisch berechnet und ein Bust bei über 21 Punkten erkannt. Auch ein Dealer wurde umgesetzt, der selbstständig Karten zieht und anschliessend den Gewinner bestimmt. Zusätzlich zählt das Ass je nach Situation als 1 oder 11. Zum Schluss habe ich ein Einsatzsystem mit Chips, mehrere Spielrunden und die 3:2-Auszahlung bei einem Blackjack eingebaut. Während des Projekts konnte ich vor allem den Umgang mit C#, XAML, Methoden, Events, Bedingungen und Spiellogik lernen und verbessern.
 
+<img width="1417" height="716" alt="image" src="https://github.com/user-attachments/assets/41ddb1d8-e1ad-4e97-848a-b6d1a516fd00" />
 
+<img width="1373" height="741" alt="image" src="https://github.com/user-attachments/assets/d70313ac-78db-4cb0-8049-b123550288df" />
+
+<img width="1880" height="1057" alt="image" src="https://github.com/user-attachments/assets/33c893b1-edb0-4406-ac8c-5b71170cd8cc" />
 
 ## Grob-Planung
 
