@@ -49,6 +49,9 @@ Heute habe ich die Spiellogik meines Blackjack-Spiels stark erweitert. Die Karte
 
 ## 11.092026
 
-- [ ] Als Spieler möchte ich, dass ein Ass je nach Situation als 1 oder 11 Punkte zählt, damit die Blackjack-Regeln korrekt umgesetzt werden.
-- [ ] Als Spieler möchte ich nach einer beendeten Runde eine neue Runde starten können, damit ich mehrere Runden hintereinander spielen kann, ohne die App neu zu starten.
-- [ ] Als Spieler möchte ich vor einer Runde Chips setzen können, damit Gewinne und Verluste Auswirkungen auf mein Guthaben haben.
+Heute habe ich mein Blackjack-Spiel weitgehend fertiggestellt. Ich habe die Ass-Regel eingebaut, sodass ein Ass je nach Situation 1 oder 11 Punkte zählt. Ausserdem kann nach einer beendeten Runde direkt eine neue Runde gestartet werden. Zusätzlich habe ich ein Einsatz- und Chipsystem umgesetzt. Der Spieler startet mit 1'000 Chips und kann vor jeder Runde einen Einsatz wählen. Gewinne, Niederlagen und Unentschieden verändern das Guthaben entsprechend. Bei einem echten Blackjack wird ausserdem die 3:2-Auszahlung angewendet. Damit sind die wichtigsten Blackjack-Regeln und Spielfunktionen umgesetzt.
+
+
+- [x] Als Spieler möchte ich, dass ein Ass je nach Situation als 1 oder 11 Punkte zählt, damit die Blackjack-Regeln korrekt umgesetzt werden.
+- [x] Als Spieler möchte ich nach einer beendeten Runde eine neue Runde starten können, damit ich mehrere Runden hintereinander spielen kann, ohne die App neu zu starten.
+- [x] Als Spieler möchte ich vor einer Runde Chips setzen können, damit Gewinne und Verluste Auswirkungen auf mein Guthaben haben.
