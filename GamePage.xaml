@@ -9,7 +9,6 @@
 
     <Grid>
 
-        <!-- Blackjack Tisch -->
         <Border
             Margin="20"
             BackgroundColor="#0B3D2E"
@@ -17,15 +16,13 @@
             StrokeThickness="2"
             StrokeShape="RoundRectangle 30">
 
-            <Grid
-                Padding="25"
-                RowDefinitions="Auto,*,Auto,*,Auto">
+            <ScrollView>
 
-                <!-- DEALER -->
                 <VerticalStackLayout
-                    Grid.Row="0"
-                    HorizontalOptions="Center"
-                    Spacing="8">
+                    Padding="25"
+                    Spacing="15">
+
+                    <!-- DEALER -->
 
                     <Label
                         Text="DEALER"
@@ -40,183 +37,145 @@
                         Text="0"
                         FontSize="22"
                         FontAttributes="Bold"
-                        TextColor="#D4AF37"
-                        HorizontalTextAlignment="Center" />
-                        
-                    <HorizontalStackLayout
-                        x:Name="DealerCardsLayout"
-                        HorizontalOptions="Center"
-                        Spacing="12" />
-
-                    <Label
-                        Text="♠  ♥  ♣  ♦"
-                        FontSize="20"
                         TextColor="White"
                         HorizontalTextAlignment="Center" />
 
-                   
+                    <HorizontalStackLayout
+                        x:Name="DealerCardsLayout"
+                        HorizontalOptions="Center"
+                        Spacing="8" />
 
-                </VerticalStackLayout>
+                    <!-- MITTE -->
 
+                    <VerticalStackLayout
+                        HorizontalOptions="Center"
+                        Margin="0,20"
+                        Spacing="4">
 
-                <!-- Mitte -->
-                <VerticalStackLayout
-                    Grid.Row="2"
-                    HorizontalOptions="Center"
-                    VerticalOptions="Center"
-                    Spacing="6">
+                        <Label
+                            Text="BLACKJACK"
+                            FontSize="28"
+                            FontAttributes="Bold"
+                            TextColor="#D4AF37"
+                            HorizontalTextAlignment="Center" />
+
+                        <Label
+                            Text="PAYS 3:2"
+                            FontSize="11"
+                            CharacterSpacing="3"
+                            TextColor="#A8B9B0"
+                            HorizontalTextAlignment="Center" />
+
+                    </VerticalStackLayout>
+
+                    <!-- PLAYER -->
 
                     <Label
-                        Text="BLACKJACK"
-                        FontSize="28"
+                        Text="YOUR HAND"
+                        FontSize="13"
+                        FontAttributes="Bold"
+                        CharacterSpacing="2"
+                        TextColor="White"
+                        HorizontalTextAlignment="Center" />
+
+                    <Label
+                        x:Name="PlayerScoreLabel"
+                        Text="0"
+                        FontSize="22"
                         FontAttributes="Bold"
                         TextColor="#D4AF37"
                         HorizontalTextAlignment="Center" />
 
+                    <HorizontalStackLayout
+                        x:Name="PlayerCardsLayout"
+                        HorizontalOptions="Center"
+                        Spacing="8" />
+
+                    <!-- STATUS -->
+
                     <Label
-                        Text="PAYS 3:2"
-                        FontSize="11"
-                        CharacterSpacing="3"
-                        TextColor="#A8B9B0"
+                        x:Name="GameStatusLabel"
+                        Text="SET YOUR BET"
+                        FontSize="16"
+                        FontAttributes="Bold"
+                        TextColor="#D4AF37"
+                        HorizontalTextAlignment="Center"
+                        Margin="0,15,0,5" />
+
+                    <!-- GELD -->
+
+                    <Label
+                        x:Name="BalanceLabel"
+                        Text="Balance: 1'000 Chips"
+                        FontSize="16"
+                        FontAttributes="Bold"
+                        TextColor="White"
                         HorizontalTextAlignment="Center" />
 
-                </VerticalStackLayout>
+                    <HorizontalStackLayout
+                        HorizontalOptions="Center"
+                        Spacing="10">
 
+                        <Entry
+                            x:Name="BetEntry"
+                            Text="100"
+                            Placeholder="Einsatz"
+                            Keyboard="Numeric"
+                            WidthRequest="120"
+                            TextColor="White"
+                            PlaceholderColor="#A8B9B0"
+                            HorizontalTextAlignment="Center" />
 
-                <!-- PLAYER -->
-                <VerticalStackLayout
-            
-            Grid.Row="4"
-            HorizontalOptions="Fill"
-            Spacing="12">
-
-                            <Label
-                Text="YOUR HAND"
-                FontSize="13"
-                FontAttributes="Bold"
-                CharacterSpacing="2"
-                TextColor="White"
-                HorizontalTextAlignment="Center" />
-                             
-                <Label
-                    x:Name="PlayerScoreLabel"
-                    Text="0"
-                    FontSize="22"
-                    FontAttributes="Bold"
-                    TextColor="#D4AF37"
-                    HorizontalTextAlignment="Center" />
-                    
-                    
-                    
-
-                            <!-- Spielerkarten -->
-                            <HorizontalStackLayout
-                x:Name="PlayerCardsLayout"
-                HorizontalOptions="Center"
-                Spacing="12">
-
-                                <Border
-                    WidthRequest="85"
-                    HeightRequest="120"
-                    BackgroundColor="White"
-                    Stroke="#D4AF37"
-                    StrokeThickness="2"
-                    StrokeShape="RoundRectangle 10">
-
-                                    <Grid>
-                                        <Label
-                            x:Name="FirstCardLabel"
-                            Text="A♠"
-                            FontSize="28"
+                        <Button
+                            x:Name="DealButton"
+                            Text="DEAL"
+                            Clicked="OnDealClicked"
+                            BackgroundColor="#D4AF37"
+                            TextColor="#071C14"
                             FontAttributes="Bold"
-                            TextColor="Black"
-                            HorizontalOptions="Center"
-                            VerticalOptions="Center" />
-                                    </Grid>
-
-                                </Border>
-
-                                <Border
-                    WidthRequest="85"
-                    HeightRequest="120"
-                    BackgroundColor="White"
-                    Stroke="#D4AF37"
-                    StrokeThickness="2"
-                    StrokeShape="RoundRectangle 10">
-
-                                    <Grid>
-                                        <Label
-                            
-                            x:Name="SecondCardLabel"               
-                            Text="K♥"
-                            FontSize="28"
-                            FontAttributes="Bold"
-                            TextColor="#FFFF0000"
-                            HorizontalOptions="Center"
-                            VerticalOptions="Center" />
-                                    </Grid>
-
-                                </Border>
-
-                        
-                                
-            
-
-
+                            WidthRequest="130"
+                            CornerRadius="8" />
 
                     </HorizontalStackLayout>
 
-            <Label
-                Text="Balance  1'000 Chips"
-                FontSize="14"
-                TextColor="#D4AF37"
-                HorizontalTextAlignment="Center" />
+                    <!-- HIT / STAND -->
 
-            <Label
-                x:Name="GameStatusLabel"
-                Text="YOUR TURN"
-                FontSize="16"
-                FontAttributes="Bold"
-                TextColor="#D4AF37"
-                HorizontalTextAlignment="Center"
-                Margin="0,5,0,5" />
+                    <Grid
+                        ColumnDefinitions="*,*"
+                        ColumnSpacing="10"
+                        Margin="0,10,0,0">
 
-            <Grid
-                ColumnDefinitions="*,*"
-                ColumnSpacing="10"
-                Margin="0,10,0,0">
+                        <Button
+                            x:Name="HitButton"
+                            Grid.Column="0"
+                            Text="HIT"
+                            Clicked="OnHitClicked"
+                            FontAttributes="Bold"
+                            BackgroundColor="#D4AF37"
+                            TextColor="#071C14"
+                            HeightRequest="55"
+                            CornerRadius="8"
+                            IsEnabled="False" />
 
+                        <Button
+                            x:Name="StandButton"
+                            Grid.Column="1"
+                            Text="STAND"
+                            Clicked="OnStandClicked"
+                            FontAttributes="Bold"
+                            BackgroundColor="#173F32"
+                            BorderColor="#D4AF37"
+                            BorderWidth="1"
+                            TextColor="White"
+                            HeightRequest="55"
+                            CornerRadius="8"
+                            IsEnabled="False" />
 
-            <Button
-                                    
-                Grid.Column="0"
-                Text="HIT"
-                FontAttributes="Bold"
-                BackgroundColor="#D4AF37"
-                TextColor="#071C14"
-                HeightRequest="55"
-                CornerRadius="8"
-                Clicked="OnHitClicked"
-                x:Name="HitButton" />
-
-            <Button
-                Grid.Column="1"
-                Text="STAND"
-                FontAttributes="Bold"
-                BackgroundColor="#173F32"
-                BorderColor="#D4AF37"
-                BorderWidth="1"
-                TextColor="White"
-                HeightRequest="55"
-                CornerRadius="8"
-                Clicked="OnStandClicked"
-                x:Name="StandButton"/>
-
-            </Grid>
+                    </Grid>
 
                 </VerticalStackLayout>
 
-            </Grid>
+            </ScrollView>
 
         </Border>
 
