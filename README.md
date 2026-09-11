@@ -1,5 +1,12 @@
 # Lernperiode-11
 
+
+## Projektvorstellung
+
+In meiner Lernperiode habe ich ein eigenes Blackjack-Spiel als .NET MAUI App mit C# und XAML entwickelt. Das Spiel besitzt zufällige Spielkarten mit verschiedenen Werten und Symbolen sowie die wichtigsten Blackjack-Regeln. Der Spieler kann Karten mit HIT ziehen oder seinen Zug mit STAND beenden. Dabei werden die Punkte automatisch berechnet und ein Bust bei über 21 Punkten erkannt. Auch ein Dealer wurde umgesetzt, der selbstständig Karten zieht und anschliessend den Gewinner bestimmt. Zusätzlich zählt das Ass je nach Situation als 1 oder 11. Zum Schluss habe ich ein Einsatzsystem mit Chips, mehrere Spielrunden und die 3:2-Auszahlung bei einem Blackjack eingebaut. Während des Projekts konnte ich vor allem den Umgang mit C#, XAML, Methoden, Events, Bedingungen und Spiellogik lernen und verbessern.
+
+
+
 ## Grob-Planung
 
 Erklären Sie Ihre Projekt-Idee in einem Satz, als müssen Sie einen Investor davon überzeugen.
